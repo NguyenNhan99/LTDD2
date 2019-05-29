@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.layouy_pj.GiaiThichDung"
+    android:background="@drawable/bakground"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/giaithichdung"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#F1EDED"
+        android:background="@drawable/tv"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="236dp"
+            android:layout_height="112dp"
+            android:background="@drawable/thua" />
+
+        <Button
+            android:id="@+id/quaytiepnao"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonthua"
+            android:text="Quẩy Tiếp Nào !!!"
+            android:textColor="#FDFCFC" />
+    </LinearLayout>
+</LinearLayout>
