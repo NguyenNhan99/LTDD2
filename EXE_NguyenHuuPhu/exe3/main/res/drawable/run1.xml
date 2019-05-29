@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/arun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/brun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/crun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/drun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/erun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/frun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/grun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/hrun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/irun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/jrun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/krun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/lrun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/mrun"
+        android:duration="100"/>
+
+    <item android:drawable="@drawable/nrun"
+        android:duration="100"/>
+
+
+
+</animation-list>
