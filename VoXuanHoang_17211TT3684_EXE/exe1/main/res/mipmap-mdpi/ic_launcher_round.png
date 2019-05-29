@@ -1,0 +1,78 @@
+package tdc.edu.vn.test;
+
+import android.app.Application;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    Button btnCong, btnTru;
+    TextView CauHoi;
+
+    EditText ketqua;
+    int sokq;
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager layoutManager;
+    Adapter adapter;
+    ArrayList<PhepTinh> data = new ArrayList<>();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setControl();
+        setAdapter();
+        setEvent();
+    }
+
+
+    public void setAdapter(){
+        recyclerView = (RecyclerView)findViewById(R.id.r1);
+        layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new Adapter(this,data, R.layout.listview_item_layout);
+        recyclerView.setAdapter(adapter);
+
+    }
+    public void setControl()
+    {
+        CauHoi = (TextView)findViewById(R.id.txtCauHoi) ;
+        btnCong = (Button)findViewById(R.id.btnTraLoi);
+        btnTru = (Button) findViewById(R.id.btnChoiLai);
+        ketqua = (EditText) findViewById(R.id.ketqua);
+    }
+    public void setEvent(){
+        CauHoi.setText(loadCauHoi());
+        btnCong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(kiemtra()) return;
+               //int temp = Integer.parseInt(soA.getText().toString()) + Integer.parseInt(soB.getText().toString());
+               int temps = Integer.parseInt(ketqua.getText().toString());
+               if (sokq == temps){
+                   PhepTinh pt = new PhepTinh();
+                   pt.setCauHoi("Đúng rồi !!! Giỏi quá.");
+                   pt.setCauHoi(ketqua.getText().toString());
+                   pt.setIcon(R.drawable.diemtot);
+                   data.add(pt);
+               }else {
+                   PhepTinh pt = new PhepTinh();
+                   pt.setCauHoi(CauHoi.getText().toString());
+                   pt.setCauHoi(ketqua.getText().toString());
+                   pt.setIcon(R.drawable.ic_android_black_24dp);
+                   data.add(pt);
+               }
+
+               adapter.notifyDataSetChanged();
+            }
+        });
+   
