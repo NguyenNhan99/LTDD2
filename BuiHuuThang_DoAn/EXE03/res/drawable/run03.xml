@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/mden01"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden02"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden03"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden04"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden05"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden06"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden07"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden08"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden09"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden10"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden12"
+        android:duration="100"/>
+    <item android:drawable="@drawable/mden13"
+        android:duration="100"/>
+</animation-list>
+
