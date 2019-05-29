@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bgmp3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/tvbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorBg"/>
+
+        <TextView
+
+            android:id="@+id/tvcasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca sĩ"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorcs"/>
+
+        <ImageView
+            android:id="@+id/hinh"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mp3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvdau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/colorBg"/>
+
+        <SeekBar
+            android:id="@+id/sB"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tvcuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/colorBg"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prev" />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_stop" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+
+    </ListView>
+
+
+</LinearLayout>
